@@ -2,6 +2,14 @@ pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
 
+fn internal_adder(left: usize, right: usize) -> usize {
+    left + right
+}
+
+pub fn add_two(a: usize) -> usize {
+    internal_adder(a, 2)
+}
+
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
